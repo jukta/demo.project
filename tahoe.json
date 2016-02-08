@@ -1,0 +1,13 @@
+{
+    "tahoe": {
+        "name":"demo",
+        "dependencies": ["../sv-tahoe.base", "../sv-tahoe.social"],
+        "blocksDir":"blocks",
+        "publicDir":"public",
+        "minify": false,
+        "client": {
+            "include":["social/components/comments:comments", "social/components/comments:comment", "social/components/comments:new-comment", "social/components/comments:replay"],
+            "exclude":[]
+        }
+    }
+}

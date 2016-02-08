@@ -1,0 +1,47 @@
+<sv:root xmlns:sv="E:\SANDBOX\repos\jukta-org\sv-tahoe\schema.xsd" pref="lc"
+         xmlns:be="http://www.w3.org/1999/xhtml">
+
+    <sv:import prefix="be" file="base/elements"/>
+    <sv:import prefix="bl" file="base/layouts"/>
+    <sv:import prefix="bls" file="base/layouts/split-layout"/>
+    <sv:import prefix="soc" file="social/components/editor"/>
+    <sv:import prefix="se" file="social/elements"/>
+    <sv:import prefix="sc" file="social/components/comments"/>
+
+    <sv:block name="demo-page">
+
+        <be:doctype/>
+        <be:html>
+            <sv:def name="head">
+                <script src="/javascripts/jquery.min.js"></script>
+                <link rel="stylesheet" href="/demo.css"/>
+                <script src="/javascripts/sv.js"></script>
+                <script src="/javascripts/sv-http.js"></script>
+                <script src="/javascripts/sv-tahoe.js"></script>
+                <script src="/demo-client.js"></script>
+                <script src="/demo-schema-client.js"></script>
+                <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+            </sv:def>
+
+            <sv:def name="body">
+                <div class="content">
+                    <sv:def/>
+                </div>
+            </sv:def>
+        </be:html>
+
+    </sv:block>
+
+    <sv:block name="comments" parent="lc:demo-page">
+        <sc:comments/>
+    </sv:block>
+
+    <sv:block name="editor" parent="lc:demo-page">
+        <soc:editor id="123" class="some-editor">
+            If the first argument is not a format string then util.format() returns a string that is the concatenation of all its arguments separated by spaces. Each argument is converted to a string with util.inspect().
+        </soc:editor>
+    </sv:block>
+
+</sv:root>
+
+
