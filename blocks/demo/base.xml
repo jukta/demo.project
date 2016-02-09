@@ -1,0 +1,138 @@
+<sv:root xmlns:sv="E:\SANDBOX\repos\jukta-org\sv-tahoe\schema.xsd" pref="lc"
+         xmlns:be="http://www.w3.org/1999/xhtml">
+
+    <sv:import prefix="be" file="base/elements"/>
+    <sv:import prefix="bl" file="base/layouts"/>
+    <sv:import prefix="bls" file="base/layouts/split-layout"/>
+    <sv:import prefix="soc" file="social/components/editor"/>
+    <sv:import prefix="se" file="social/elements"/>
+    <sv:import prefix="sc" file="social/components/comments"/>
+    <sv:import prefix="dp" file="demo/pages"/>
+
+    <sv:block name="base" parent="dp:demo-page">
+        <div class="menu top-menu fixed">
+            <menu>Module: <strong>Base</strong><a href="/social">Social</a></menu>
+        </div>
+        <div class="menu left-menu fixed">
+            <menu>
+                <strong>elements</strong>
+                <ul>
+                    <li><a href="#button">button</a></li>
+                    <li><a href="#input">input</a></li>
+                    <li><a href="#password">password</a></li>
+                    <li><a href="#textarea">textarea</a></li>
+                    <li><a href="#checkbox">checkbox</a></li>
+                    <li><a href="#select">select</a></li>
+                    <li><a href="#option">option</a></li>
+                    <li><a href="#radio-group">radio-group</a></li>
+                    <li><a href="#html">html</a></li>
+                </ul>
+                <strong>layouts</strong>
+                <ul>
+                    <li><a href="#split-layout">split-layout</a></li>
+                    <li><a href="#hor-layout">hor-layout</a></li>
+                    <li><a href="#h-layout">h-layout</a></li>
+                    <li><a href="#justify-layout">justify-layout</a></li>
+                    <li><a href="#ver-layout">ver-layout</a></li>
+                    <li><a href="#grid-layout">grid-layout</a></li>
+
+                </ul>
+            </menu>
+            <nav><a href="comments">modules/comments</a><a href="editor">modules/editor</a></nav>
+        </div>
+        <div class="body">
+            <h2>Elements</h2>
+            <hr/>
+            <p>Example import elements</p>
+            <pre class="code">
+                <i>sv:import prefix="be" file="base/elements"/</i>
+            </pre>
+            <bl:section class="section-button">
+                <a id="button"></a>
+                <h3>Button</h3>
+                <hr/>
+                <div>
+                    <p>This is description of an element</p>
+                    <be:button>My button</be:button>
+                    <pre class="code">
+                        <i>be:button</i>My button<i>/be:button</i>
+                    </pre>
+                </div>
+                <hr/>
+                <div>
+                    <p>This is description of an element</p>
+                    <be:button class="link">My link button</be:button>
+                    <pre class="code">
+                        <i>be:button class="link"</i>My link button<i>/be:button</i>
+                    </pre>
+                </div>
+<!--box
+                    section
+                    wrapper
+                    v-layout
+                    cell
+                    h-layout
+                    j-layout
+                    grid-layout
+
+                    full-screen-layout
+                    row
+cell-->
+            </bl:section>
+            <h2>Layouts</h2>
+            <hr/>
+            <bl:section>
+                <a id="justify-layout"></a>
+                <h3>Justify-layout</h3>
+                <hr/>
+                <div>
+                    <p>This is description of an element</p>
+                    <bl:justify-layout>
+                        <bl:cell>
+                            section
+                        </bl:cell>
+                        <bl:cell>
+                            wrapper
+                        </bl:cell>
+                        <bl:cell>
+                            v-layout
+                        </bl:cell>
+                        <bl:cell>
+                            cell
+                        </bl:cell>
+                        <bl:cell>
+                            h-layout
+                        </bl:cell>
+                        <bl:cell>
+                            justify-layout
+                        </bl:cell>
+                    </bl:justify-layout>
+                    <pre class="code">
+<i>bl:justify-layout</i><br/>
+    <i>bl:cell</i><br/>
+        section<br/>
+    <i>/bl:cell</i><br/>
+    <i>bl:cell</i><br/>
+        wrapper<br/>
+    <i>/bl:cell</i><br/>
+<i>/bl:justify-layout</i>
+                    </pre>
+                    <pre><code>
+                        1213 .3 l;oj '  lk
+                        sgshdgs
+                        tsthsh
+                    </code></pre>
+                    <code>
+                        1213 .3 l;oj '  lk
+                        sgshdgs
+                        tsthsh
+                    </code>
+                </div>
+            </bl:section>
+
+        </div>
+    </sv:block>
+
+</sv:root>
+
+

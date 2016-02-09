@@ -15,6 +15,8 @@
             <sv:def name="head">
                 <script src="/javascripts/jquery.min.js"></script>
                 <link rel="stylesheet" href="/demo.css"/>
+                <link rel="stylesheet" href="/css/reset.css"/>
+                <link rel="stylesheet" href="/css/jukta-decor.css"/>
                 <script src="/javascripts/sv.js"></script>
                 <script src="/javascripts/sv-http.js"></script>
                 <script src="/javascripts/sv-tahoe.js"></script>
@@ -30,16 +32,6 @@
             </sv:def>
         </be:html>
 
-    </sv:block>
-
-    <sv:block name="comments" parent="lc:demo-page">
-        <sc:comments/>
-    </sv:block>
-
-    <sv:block name="editor" parent="lc:demo-page">
-        <soc:editor id="123" class="some-editor">
-            If the first argument is not a format string then util.format() returns a string that is the concatenation of all its arguments separated by spaces. Each argument is converted to a string with util.inspect().
-        </soc:editor>
     </sv:block>
 
 </sv:root>

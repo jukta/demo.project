@@ -1,4 +1,45 @@
 .content {
     margin: 0 auto;
-    width: 1200px;
+    display: block;
+}
+.top-menu {
+    top: 0;
+    height: 36px;
+    width: 100%;
+}
+.fixed {
+    position: fixed;
+}
+.left-menu {
+    width: 150px;
+    top: 36px;
+    background-color: #DDDDDD;
+    vertical-align: top !important;
+}
+menu {
+    margin: 0px;
+}
+.menu {
+     background-color: #DDDDDD;
+}
+.menu ul {
+    padding: 0;
+}
+.menu li {
+    list-style-type: none;
+}
+.menu a {
+    padding: .1em .5em .3em .5em;
+    font-size: .86em;
+}
+.menu.top-menu strong {
+    padding: .1em .5em .3em .5em;
+    font-size: 1em;
+}
+.left-menu a {
+    display: block;
+}
+.body {
+    padding-top: 54px;
+    padding-left: 200px;
 }
