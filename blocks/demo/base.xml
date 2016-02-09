@@ -11,10 +11,13 @@
 
     <sv:block name="base" parent="dp:demo-page">
         <div class="menu top-menu fixed">
-            <menu>Module: <strong>Base</strong><a href="/social">Social</a></menu>
+            <div class="logo-top"><img src="/img/tahoe-logo3d-white.svg"/></div><menu><strong>Base</strong><a href="/social">Social</a></menu>
         </div>
         <div class="menu left-menu fixed">
             <menu>
+                <ul>
+                    <li><a href="#">import</a></li>
+                </ul>
                 <strong>elements</strong>
                 <ul>
                     <li><a href="#button">button</a></li>
@@ -38,98 +41,108 @@
 
                 </ul>
             </menu>
-            <nav><a href="comments">modules/comments</a><a href="editor">modules/editor</a></nav>
         </div>
-        <div class="body">
-            <h2>Elements</h2>
-            <hr/>
-            <p>Example import elements</p>
-            <pre class="code">
-                <i>sv:import prefix="be" file="base/elements"/</i>
-            </pre>
-            <bl:section class="section-button">
-                <a id="button"></a>
-                <h3>Button</h3>
-                <hr/>
-                <div>
-                    <p>This is description of an element</p>
-                    <be:button>My button</be:button>
-                    <pre class="code">
-                        <i>be:button</i>My button<i>/be:button</i>
-                    </pre>
+        <div class="content-body">
+            <div class="panel">
+                <div class="panel-head">
+                    <div class="panel-tools">
+                        <a class="collapse" href="#"></a>
+                    </div>
+                    <div class="panel-title nav">
+                        <nav>Module Base > <strong>Elements</strong></nav>
+                    </div>
                 </div>
-                <hr/>
-                <div>
-                    <p>This is description of an element</p>
-                    <be:button class="link">My link button</be:button>
-                    <pre class="code">
-                        <i>be:button class="link"</i>My link button<i>/be:button</i>
-                    </pre>
-                </div>
-<!--box
-                    section
-                    wrapper
-                    v-layout
-                    cell
-                    h-layout
-                    j-layout
-                    grid-layout
 
-                    full-screen-layout
-                    row
-cell-->
-            </bl:section>
-            <h2>Layouts</h2>
-            <hr/>
-            <bl:section>
-                <a id="justify-layout"></a>
-                <h3>Justify-layout</h3>
-                <hr/>
-                <div>
-                    <p>This is description of an element</p>
-                    <bl:justify-layout>
-                        <bl:cell>
-                            section
-                        </bl:cell>
-                        <bl:cell>
-                            wrapper
-                        </bl:cell>
-                        <bl:cell>
-                            v-layout
-                        </bl:cell>
-                        <bl:cell>
-                            cell
-                        </bl:cell>
-                        <bl:cell>
-                            h-layout
-                        </bl:cell>
-                        <bl:cell>
-                            justify-layout
-                        </bl:cell>
-                    </bl:justify-layout>
+                <div class="panel-body">
+                    <p>Example import elements</p>
                     <pre class="code">
-<i>bl:justify-layout</i><br/>
-    <i>bl:cell</i><br/>
-        section<br/>
-    <i>/bl:cell</i><br/>
-    <i>bl:cell</i><br/>
-        wrapper<br/>
-    <i>/bl:cell</i><br/>
-<i>/bl:justify-layout</i>
+                        <i>sv:import prefix="be" file="base/elements"/</i>
                     </pre>
-                    <pre><code>
-                        1213 .3 l;oj '  lk
-                        sgshdgs
-                        tsthsh
-                    </code></pre>
-                    <code>
-                        1213 .3 l;oj '  lk
-                        sgshdgs
-                        tsthsh
-                    </code>
-                </div>
-            </bl:section>
+                    <bl:section class="section-button">
+                        <a id="button"></a>
+                        <h3>Button</h3>
+                        <hr/>
+                        <div>
+                            <p>This is description of an element. Classes: <code>.minor,.disable,.submit,.accent</code>. Button standard <code>normal</code>(without class).</p>
+                            <be:button class="minor">Minor</be:button><be:button class="disable">Disable</be:button><be:button>Normal</be:button><be:button class="submit">Submit</be:button><be:button class="accent">Accent</be:button>
+                            <pre class="code">
+                                <i>be:button class="minor"</i>My button<i>/be:button</i>
+                            </pre>
+                        </div>
+                        <hr/>
+                        <div>
+                            <p>This is description of an element</p>
+                            <be:button class="link">My link button</be:button>
+                            <pre class="code">
+                                <i>be:button class="link"</i>My link button<i>/be:button</i>
+                            </pre>
+                        </div>
+                        <!--box
+                                            section
+                                            wrapper
+                                            v-layout
+                                            cell
+                                            h-layout
+                                            j-layout
+                                            grid-layout
 
+                                            full-screen-layout
+                                            row
+                        cell-->
+                    </bl:section>
+
+                    <h2>Layouts</h2>
+                    <hr/>
+                    <bl:section>
+                        <a id="justify-layout"></a>
+                        <h3>Justify-layout</h3>
+                        <hr/>
+                        <div>
+                            <p>This is description of an element</p>
+                            <bl:justify-layout>
+                                <bl:cell>
+                                    section
+                                </bl:cell>
+                                <bl:cell>
+                                    wrapper
+                                </bl:cell>
+                                <bl:cell>
+                                    v-layout
+                                </bl:cell>
+                                <bl:cell>
+                                    cell
+                                </bl:cell>
+                                <bl:cell>
+                                    h-layout
+                                </bl:cell>
+                                <bl:cell>
+                                    justify-layout
+                                </bl:cell>
+                            </bl:justify-layout>
+                            <pre class="code">
+                                <i>bl:justify-layout</i><br/>
+                                <i>bl:cell</i><br/>
+                                section<br/>
+                                <i>/bl:cell</i><br/>
+                                <i>bl:cell</i><br/>
+                                wrapper<br/>
+                                <i>/bl:cell</i><br/>
+                                <i>/bl:justify-layout</i>
+                            </pre>
+                            <pre><code>
+                                1213 .3 l;oj '  lk
+                                sgshdgs
+                                tsthsh
+                            </code></pre>
+                            <code>
+                                1213 .3 l;oj '  lk
+                                sgshdgs
+                                tsthsh
+                            </code>
+                        </div>
+                    </bl:section>
+                </div>
+            </div>
         </div>
     </sv:block>
 

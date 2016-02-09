@@ -16,6 +16,7 @@
                 <script src="/javascripts/jquery.min.js"></script>
                 <link rel="stylesheet" href="/demo.css"/>
                 <link rel="stylesheet" href="/css/reset.css"/>
+                <link rel="stylesheet" href="/css/normalize.css"/>
                 <link rel="stylesheet" href="/css/jukta-decor.css"/>
                 <script src="/javascripts/sv.js"></script>
                 <script src="/javascripts/sv-http.js"></script>
