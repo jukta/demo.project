@@ -16,7 +16,7 @@
         <div class="menu left-menu fixed">
             <menu>
                 <ul>
-                    <li><a href="#">import</a></li>
+                    <li><a href="#import">import</a></li>
                 </ul>
                 <strong>elements</strong>
                 <ul>
@@ -49,33 +49,118 @@
                         <a class="collapse" href="#"></a>
                     </div>
                     <div class="panel-title nav">
-                        <nav>Module Base > <strong>Elements</strong></nav>
+                        <nav>Module Base > <h2>Import</h2></nav>
                     </div>
                 </div>
-
                 <div class="panel-body">
-                    <p>Example import elements</p>
-                    <pre class="code">
-                        <i>sv:import prefix="be" file="base/elements"/</i>
-                    </pre>
-                    <bl:section class="section-button">
-                        <a id="button"></a>
+
+                    <a id="import"></a>
+                    <bl:section>
+                        <p>Example import elements:</p>
+                        <pre class="code">
+                            <i><strong>sv:import</strong> &amp;nbsp; prefix="be" file="base/elements"/</i>
+                        </pre>
+                    </bl:section>
+
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="panel-head">
+                    <div class="panel-tools">
+                        <a class="collapse" href="#"></a>
+                    </div>
+                    <div class="panel-title nav">
+                        <nav>Module Base > <h2>Elements</h2></nav>
+                    </div>
+                </div>
+                <div class="panel-body">
+
+                    <a id="button"></a>
+                    <bl:section>
                         <h3>Button</h3>
                         <hr/>
                         <div>
-                            <p>This is description of an element. Classes: <code>.minor,.disable,.submit,.accent</code>. Button standard <code>normal</code>(without class).</p>
-                            <be:button class="minor">Minor</be:button><be:button class="disable">Disable</be:button><be:button>Normal</be:button><be:button class="submit">Submit</be:button><be:button class="accent">Accent</be:button>
+                            <p>Standard buttons</p>
                             <pre class="code">
-                                <i>be:button class="minor"</i>My button<i>/be:button</i>
+&amp;lt;be:button class="minor"&amp;gt;<strong>Minor</strong>&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button class="disable"&amp;gt;<strong>Disable</strong>&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button&amp;gt;<strong>Normal</strong>&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button class="submit"&amp;gt;<strong>Submit</strong>&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button class="accent"&amp;gt;<strong>Accent</strong>&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button class="link"&amp;gt;<strong>Link</strong>&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button class="<strong>minor minus sign</strong>"&amp;gt;−&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button class="<strong>plus sign</strong>"&amp;gt;+&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button class="<strong>delete sign</strong>"&amp;gt;×&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button class="<strong>check sign</strong>"&amp;gt;×&amp;lt;/be:button&amp;gt;
                             </pre>
+                            <div class="cm">
+                                <be:button class="minor">Minor</be:button><be:button class="disable">Disable</be:button><be:button>Normal</be:button><be:button class="submit">Submit</be:button><be:button class="accent">Accent</be:button><be:button class="link">Link</be:button><be:button class="minor minus sign">−</be:button><be:button class="plus sign">+</be:button><be:button class="delete sign">×</be:button><be:button class="check sign">&amp;#10004;</be:button>
+                            </div>
                         </div>
                         <hr/>
                         <div>
-                            <p>This is description of an element</p>
-                            <be:button class="link">My link button</be:button>
+                            <p>Bigsize buttons</p>
                             <pre class="code">
-                                <i>be:button class="link"</i>My link button<i>/be:button</i>
+&amp;lt;be:button class="<strong>minor bigsize</strong>"&amp;gt;Minor&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button class="<strong>disable bigsize</strong>"&amp;gt;Disable&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button class="<strong>bigsize</strong>"&amp;gt;Normal&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button class="<strong>submit bigsize</strong>"&amp;gt;Submit&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button class="<strong>accent bigsize</strong>"&amp;gt;Accent&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button class="<strong>link bigsize</strong>"&amp;gt;Link&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button class="<strong>minor minus bigsize sign</strong>"&amp;gt;−&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button class="<strong>plus bigsize sign</strong>"&amp;gt;+&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button class="<strong>delete bigsize sign</strong>"&amp;gt;×&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button class="<strong>check bigsize sign</strong>"&amp;gt;×&amp;lt;/be:button&amp;gt;
                             </pre>
+                            <div class="cm">
+                                <be:button class="minor bigsize">Minor</be:button><be:button class="disable bigsize">Disable</be:button><be:button class="bigsize">Normal</be:button><be:button class="submit bigsize">Submit</be:button><be:button class="accent bigsize">Accent</be:button><be:button class="link bigsize">Link</be:button><be:button class="minor minus bigsize sign">−</be:button><be:button class="plus bigsize sign">+</be:button><be:button class="delete bigsize sign">×</be:button><be:button class="check bigsize sign">&amp;#10004;</be:button>
+                            </div>
+                        </div>
+                        <hr/>
+                        <div>
+                            <p>Minimalize buttons</p>
+                            <pre class="code">
+&amp;lt;be:button class="<strong>minor mini</strong>"&amp;gt;Minor&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button class="<strong>disable mini</strong>"&amp;gt;Disable&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button class="<strong>mini</strong>"&amp;gt;Normal&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button class="<strong>submit mini</strong>"&amp;gt;Submit&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button class="<strong>accent mini</strong>"&amp;gt;Accent&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button class="<strong>link mini</strong>"&amp;gt;Link&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button class="<strong>minor minus mini sign</strong>"&amp;gt;−&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button class="<strong>plus mini sign</strong>"&amp;gt;+&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button class="<strong>delete mini sign</strong>"&amp;gt;×&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button class="<strong>check mini sign</strong>"&amp;gt;×&amp;lt;/be:button&amp;gt;
+                            </pre>
+                            <div class="cm">
+                                <be:button class="minor mini">Minor</be:button><be:button class="disable mini">Disable</be:button><be:button class="mini">Normal</be:button><be:button class="submit mini">Submit</be:button><be:button class="accent mini">Accent</be:button><be:button class="link mini">Link</be:button><be:button class="minor minus mini sign">−</be:button><be:button class="plus mini sign">+</be:button><be:button class="delete mini sign">×</be:button><be:button class="check mini sign">&amp;#10004;</be:button>
+                            </div>
+                        </div>
+                        <hr/>
+                        <div>
+                            <p>Round buttons</p>
+                            <pre class="code">
+&amp;lt;be:button class="<strong>minor minus round sign</strong>"&amp;gt;−&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button class="<strong>plus round sign</strong>"&amp;gt;+&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button class="<strong>delete round sign</strong>"&amp;gt;×&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button class="<strong>check round sign</strong>"&amp;gt;×&amp;lt;/be:button&amp;gt;
+<br/><br/>
+&amp;lt;be:button class="<strong>accent bigsize round</strong>"&amp;gt;Accent&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button class="<strong>minor minus bigsize round sign</strong>"&amp;gt;−&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button class="<strong>plus bigsize round sign</strong>"&amp;gt;+&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button class="<strong>delete bigsize round sign</strong>"&amp;gt;×&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button class="<strong>check bigsize round sign</strong>"&amp;gt;×&amp;lt;/be:button&amp;gt;
+<br/><br/>
+&amp;lt;be:button class="<strong>minor minus mini round sign</strong>"&amp;gt;−&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button class="<strong>plus mini round sign</strong>"&amp;gt;+&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button class="<strong>delete mini round sign</strong>"&amp;gt;×&amp;lt;/be:button&amp;gt;
+&amp;lt;be:button class="<strong>check mini round sign</strong>"&amp;gt;×&amp;lt;/be:button&amp;gt;
+                            </pre>
+                            <div class="cm">
+                                <be:button class="minor minus round sign">−</be:button><be:button class="plus round sign">+</be:button><be:button class="delete round sign">×</be:button><be:button class="check round sign">&amp;#10004;</be:button><br/>
+                                <be:button class="accent bigsize round">Accent</be:button><be:button class="minor minus bigsize round sign">−</be:button><be:button class="plus bigsize round sign">+</be:button><be:button class="delete bigsize round sign">×</be:button><be:button class="check bigsize round sign">&amp;#10004;</be:button><br/>
+                                <be:button class="minor minus mini round sign">−</be:button><be:button class="plus mini round sign">+</be:button><be:button class="delete mini round sign">×</be:button><be:button class="check mini round sign">&amp;#10004;</be:button>
+                            </div>
                         </div>
                         <!--box
                                             section
@@ -91,56 +176,70 @@
                         cell-->
                     </bl:section>
 
-                    <h2>Layouts</h2>
-                    <hr/>
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="panel-head">
+                    <div class="panel-tools">
+                        <a class="collapse" href="#"></a>
+                    </div>
+                    <div class="panel-title nav">
+                        <nav>Module Base > <h2>Layouts</h2></nav>
+                    </div>
+                </div>
+                <div class="panel-body">
+
+                    <a id="justify-layout"></a>
                     <bl:section>
-                        <a id="justify-layout"></a>
                         <h3>Justify-layout</h3>
                         <hr/>
                         <div>
-                            <p>This is description of an element</p>
+                            <pre class="code">
+&amp;lt;<strong>bl:justify-layout</strong>&amp;gt;
+    &amp;lt;bl:cell&amp;gt;
+        cell
+    &amp;lt;/bl:cell&amp;gt;
+    &amp;lt;bl:cell&amp;gt;
+        cell 02
+    &amp;lt;/bl:cell&amp;gt;
+    &amp;lt;bl:cell&amp;gt;
+        cell 0003
+    &amp;lt;/bl:cell&amp;gt;
+    &amp;lt;bl:cell&amp;gt;
+        cell number 4
+    &amp;lt;/bl:cell&amp;gt;
+    &amp;lt;bl:cell&amp;gt;
+        cell 5
+    &amp;lt;/bl:cell&amp;gt;
+    &amp;lt;bl:cell&amp;gt;
+        cell 6
+    &amp;lt;/bl:cell&amp;gt;
+&amp;lt;<strong>/bl:justify-layout</strong>&amp;gt;
+                            </pre>
                             <bl:justify-layout>
                                 <bl:cell>
-                                    section
+                                    cell 01
                                 </bl:cell>
                                 <bl:cell>
-                                    wrapper
+                                    cell 002
                                 </bl:cell>
                                 <bl:cell>
-                                    v-layout
+                                    cell 0003
                                 </bl:cell>
                                 <bl:cell>
-                                    cell
+                                    cell number 4
                                 </bl:cell>
                                 <bl:cell>
-                                    h-layout
+                                    cell 005
                                 </bl:cell>
                                 <bl:cell>
-                                    justify-layout
+                                    cell 06
                                 </bl:cell>
                             </bl:justify-layout>
-                            <pre class="code">
-                                <i>bl:justify-layout</i><br/>
-                                <i>bl:cell</i><br/>
-                                section<br/>
-                                <i>/bl:cell</i><br/>
-                                <i>bl:cell</i><br/>
-                                wrapper<br/>
-                                <i>/bl:cell</i><br/>
-                                <i>/bl:justify-layout</i>
-                            </pre>
-                            <pre><code>
-                                1213 .3 l;oj '  lk
-                                sgshdgs
-                                tsthsh
-                            </code></pre>
-                            <code>
-                                1213 .3 l;oj '  lk
-                                sgshdgs
-                                tsthsh
-                            </code>
                         </div>
                     </bl:section>
+
                 </div>
             </div>
         </div>

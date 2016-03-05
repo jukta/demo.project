@@ -73,14 +73,19 @@
     color: #FFFFFF;
 }
 .left-menu {
-    padding: 0 15px;
-    height: 100%;
-    top: 36px;
+    padding: 0 1em 0 1em;
+    top: 0;
     left: 0;
+    bottom: 0;
     width: 120px;
     background-color: #DDDDDD;
-    vertical-align: top !important;
     z-index: 2 !important;
+    overflow-y: auto;
+    display: block;
+    margin: 0;
+}
+.left-menu menu {
+    padding: 2em 0 0 0;
 }
 .left-menu h3 {
     font-weight: 100;
